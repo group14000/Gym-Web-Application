@@ -1,11 +1,14 @@
+/* Sets the positioning context for the elements within the .footer-container */
 .footer-container {
   position: relative;
 }
 
-.footer-container > hr {
+/* Applies styles to the <hr> elements that are direct children of .footer-container */
+.footer-container>hr {
   border: 1px solid var(--lightgray);
 }
 
+/* Applies styles to the elements with class .footer */
 .footer {
   padding: 1rem 2rem;
   display: flex;
@@ -16,21 +19,25 @@
   height: 20rem;
 }
 
+/* Applies styles to the elements with class .social-links */
 .social-links {
   display: flex;
   gap: 4rem;
 }
 
-.social-links > img {
+/* Applies styles to the <img> elements that are direct children of .social-links */
+.social-links>img {
   width: 2rem;
   height: 2rem;
   cursor: pointer;
 }
 
-.logo-f > img {
+/* Applies styles to the <img> elements that are direct children of .logo-f */
+.logo-f>img {
   width: 10rem;
 }
 
+/* Applies styles to the elements with class .blur-f-1 */
 .blur-f-1 {
   bottom: 0;
   right: 15%;
@@ -40,6 +47,7 @@
   background: red;
 }
 
+/* Applies styles to the elements with class .blur-f-2 */
 .blur-f-2 {
   bottom: 0;
   left: 15%;

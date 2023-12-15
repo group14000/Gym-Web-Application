@@ -12,18 +12,21 @@ import tick from "../../assets/tick.png";
 const Reasons = () => {
   return (
     <div className="Reasons" id="reasons">
+      {/* Left section with images */}
       <div className="left-r">
         <img src={image1} alt="" />
         <img src={image2} alt="" />
         <img src={image3} alt="" />
         <img src={image4} alt="" />
       </div>
+      {/* Right section with reasons and partner details */}
       <div className="right-r">
-        <span>some reasons</span>
+        <span>Some reasons</span>
         <div>
           <span className="stroke-text">why</span>
           <span> choose us?</span>
         </div>
+        {/* Details of reasons with tick images */}
         <div className="details-r">
           <div>
             <img src={tick} alt="" />
@@ -42,10 +45,11 @@ const Reasons = () => {
             <span>RELIABLE PARTNERS</span>
           </div>
         </div>
+        {/* Partners section */}
         <span
           style={{
             color: "var(--gray)",
-            fontWeight: "normal"
+            fontWeight: "normal",
           }}
         >
           OUR PARTNERS

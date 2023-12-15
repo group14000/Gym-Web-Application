@@ -3,10 +3,10 @@ import "./Join.css";
 import emailjs from "@emailjs/browser";
 
 const Join = () => {
-  const form = useRef();
+  const form = useRef(); // Creating a ref to the form element to access its properties and methods.
 
   const sendEmail = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Preventing the default form submission behavior.
 
     emailjs
       .sendForm(
@@ -17,10 +17,10 @@ const Join = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log(result.text); // Logging the success response from the email service.
         },
         (error) => {
-          console.log(error.text);
+          console.log(error.text); // Logging any error that occurs during the email sending process.
         }
       );
   };
@@ -39,12 +39,15 @@ const Join = () => {
         </div>
       </div>
       <div className="right-j">
+        {/* Join form */}
         <form ref={form} className="email-container" onSubmit={sendEmail}>
+          {/* Email input */}
           <input
             type="email"
             name="user_email"
             placeholder="Enter your Email Address"
           />
+          {/* Join Now button */}
           <button className="btn btn-j">Join Now</button>
         </form>
       </div>

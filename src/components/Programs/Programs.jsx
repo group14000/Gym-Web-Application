@@ -1,23 +1,25 @@
 import React from "react";
 import "./Programs.css";
-import { programsData } from "../../data/programsData";
+import { programsData } from "../../data/programsData"; // Importing program data from an external source.
 import RightArrow from "../../assets/rightArrow.png";
 
 const Programs = () => {
   return (
     <div className="Programs" id="programs">
-      {/* header */}
+      {/* Header */}
       <div className="programs-header">
         <span className="stroke-text">Explore our</span>
         <span>Programs</span>
         <span className="stroke-text">to shape you</span>
       </div>
+      {/* Program categories */}
       <div className="program-categories">
         {programsData.map((program) => (
-          <div className="category">
+          <div className="category" key={program.heading}>
             {program.image}
             <span>{program.heading}</span>
             <span>{program.details}</span>
+            {/* Join Now section */}
             <div className="join-now">
               <span>Join Now</span>
               <img src={RightArrow} alt="" />
